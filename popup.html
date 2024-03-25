@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Replacer</title>
+    <style>
+        body { width: 400px; }
+        #imagePreview { width: 100%; height:380px ; background-size: contain; background-repeat: no-repeat; background-position: center; }
+    </style>
+</head>
+<body>
+    <input type="text" id="imageUrl" placeholder="Enter image URL" style="width: 380px;">
+    <div id="imagePreview"></div>
+    <select id="mode">
+        <option value="stretch">Stretch</option>
+        <option value="fill">Fill</option>
+        <option value="fit">Fit</option>
+        <option value="tile">Tile</option>
+        <option value="center">Center</option>
+        <option value="span">Span</option>
+    </select>
+    <button id="replace">Replace Images</button>
+    <script src="popup.js"></script>
+</body>
+</html>
