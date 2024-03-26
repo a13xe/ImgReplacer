@@ -15,15 +15,7 @@ browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         case 'fit':
             img.style.backgroundSize = 'contain';
             break;
-        case 'tile':
-            img.style.backgroundRepeat = 'repeat';
-            break;
         case 'center':
-            img.style.backgroundPosition = 'center';
-            img.style.backgroundSize = 'auto';
-            break;
-        case 'span':
-            // Center without scaling
             img.style.backgroundPosition = 'center';
             img.style.backgroundSize = 'auto';
             break;
